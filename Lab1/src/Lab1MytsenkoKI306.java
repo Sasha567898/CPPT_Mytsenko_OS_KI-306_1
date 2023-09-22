@@ -22,17 +22,24 @@ public class Lab1MytsenkoKI306 {
 
         for (int I = 0; I < nRows; I++)
         {
-            for (int K = nRows; K > I; K--) {
+            for (int K = nRows-1; K > I; K--) {
                 System.out.print("\t");
                 wFile.write("\t");
             }
 
-            arr[I] = new char[I];
-            for (int J = 0; J < I; J++)
+            arr[I] = new char[I+1];
+            for (int J = 0; J <= I; J++)
             {
-                arr[I][J] = (char)filler.codePointAt(0);
-                System.out.print(arr[I][J] + "\t");
-                wFile.write(arr[I][J] + "\t");
+                if(I>=nRows-2){
+                    arr[I][J] = '+';
+                    System.out.print(arr[I][J] + "\t");
+                    wFile.write(arr[I][J] + "\t");
+                }
+                else {
+                    arr[I][J] = (char) filler.codePointAt(0);
+                    System.out.print(arr[I][J] + "\t");
+                    wFile.write(arr[I][J] + "\t");
+                }
             }
             System.out.print("\n");
             wFile.print("\n");
