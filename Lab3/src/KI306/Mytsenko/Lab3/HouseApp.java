@@ -3,7 +3,7 @@ package KI306.Mytsenko.Lab3;
 /**
  * The {@code HouseDriver} class provides a simple driver program to test the House and OfficeCenter classes.
  *
- * @author Your Name
+ * @author Oleksandr Mytsenko
  * @version 1.0
  */
 public class HouseApp {
