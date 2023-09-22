@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI306.Mytsenko.Lab3","l":"House"},{"p":"KI306.Mytsenko.Lab3","l":"HouseApp"},{"p":"KI306.Mytsenko.Lab3","l":"OfficeCenter"},{"p":"KI306.Mytsenko.Lab3","l":"OfficeInterface"}];updateSearchResults();

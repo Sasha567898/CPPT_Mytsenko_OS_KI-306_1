@@ -1,4 +1,4 @@
-package KI306MytsenkoLab2;
+package KI306.Mytsenko.Lab3;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  * @version 1.0
  */
 
-public  class House {
+public abstract   class House {
     private FileWriter writer; // Поле для зберігання посилання на потік запису в файл
 
     private String address;
