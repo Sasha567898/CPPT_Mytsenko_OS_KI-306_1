@@ -26,9 +26,12 @@ public class ExpressionCalculator {
      * @return Результат обчислення виразу.
      * @throws ArithmeticException Виникає, якщо виникає помилка при обчисленні виразу.
      */
-    public double calculateExpression() throws ArithmeticException {
+    public double calculateExpression() throws ArithmeticException, NewException {
         double tanX = Math.tan(x);
         double cotanX = 1 / Math.tan(x);
+        if(x>20){
+            throw new NewException("Значення більше за 20");
+        }
 
         if (Double.isInfinite(tanX) || Double.isNaN(tanX) || Double.isInfinite(cotanX) || Double.isNaN(cotanX)) {
             throw new ArithmeticException("Вираз не визначений (tg(x) або ctg(x) мають недопустиме значення).");

@@ -21,6 +21,10 @@ public  class House {
     private int numberOfFloors;
     private boolean hasGarden;
 
+    public static int param3=0;
+    public static int param2=0;
+
+
     /**
      * Default constructor for the house.
      *
@@ -44,6 +48,8 @@ public  class House {
         this.address = address;
         this.numberOfFloors = numberOfFloors;
         this.hasGarden = hasGarden;
+        param3++;
+
     }
     /**
      * Constructs a house with the specified address and number of floors, defaulting to no garden.
@@ -53,6 +59,8 @@ public  class House {
      */
     public House(String address, int numberOfFloors) {
         this(address, numberOfFloors, false);
+        param2++;
+        param3--;
     }
     /**
      * Constructs a house with the specified address and defaults to one floor and no garden.
@@ -69,6 +77,8 @@ public  class House {
     /**
      * Open the file for writing
      */
+
+
     public void openLogFile() {
         try {
             writer = new FileWriter("log.txt", true);
@@ -171,9 +181,11 @@ public  class House {
      */
     public int getNumberOfFloors() {
         logMessage("Дана інформація про кількість поверхів.");
+
         return numberOfFloors;
 
     }
+
     /**
      * Get the address of the house.
      *

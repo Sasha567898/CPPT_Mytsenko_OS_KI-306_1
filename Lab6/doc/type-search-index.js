@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI306.Mytsenko.Lab6","l":"Item"},{"p":"KI306.Mytsenko.Lab6","l":"Main"},{"p":"KI306.Mytsenko.Lab6","l":"Penal"},{"p":"KI306.Mytsenko.Lab6","l":"Rubber"},{"p":"KI306.Mytsenko.Lab6","l":"Scissors"}];updateSearchResults();

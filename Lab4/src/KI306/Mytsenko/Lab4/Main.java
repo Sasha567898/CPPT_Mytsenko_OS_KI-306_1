@@ -1,3 +1,4 @@
+package KI306.Mytsenko.Lab4;
 import KI306.Mytsenko.Lab4.ExpressionCalculator;
 
 import java.io.IOException;
@@ -10,6 +11,8 @@ import java.util.Scanner;
  * @author Oleksandr Mytsenko
  * @since 1.0
  */
+
+
 public class Main {
     /**
      * Точка входу в програму.

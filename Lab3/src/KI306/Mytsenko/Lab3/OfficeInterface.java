@@ -9,4 +9,5 @@ public interface OfficeInterface {
     public void removeDesks(int desksToRemove);
     public void addProjector(boolean hasProjector);
     public void addWhiteboard(boolean hasWhiteboard);
+    public String writeAddressToFile();
 }

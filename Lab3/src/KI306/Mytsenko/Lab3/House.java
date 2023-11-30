@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  * @version 1.0
  */
 
-public abstract   class House {
+public abstract  class House  {
     private FileWriter writer; // Поле для зберігання посилання на потік запису в файл
 
     private String address;
@@ -180,7 +180,7 @@ public abstract   class House {
      * @return The address.
      */
     public String getAddress() {
-        logMessage("Дана інформація про адресу.");
+
         return address;
     }
     /**
@@ -197,3 +197,4 @@ public abstract   class House {
 
 
 }
+

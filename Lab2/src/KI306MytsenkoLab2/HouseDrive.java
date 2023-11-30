@@ -2,11 +2,15 @@ package KI306MytsenkoLab2;
 
 public class HouseDrive {
     public static void main(String[] args) {
+        main1();
         House house1 = new House("Вулиця Лінкольна, 123", 3, true);
         House house2 = new House("Вулиця Індепенденс, 456");
-        House house3 = new House("Вулиця Кеннеді, 789", 2);
+        House house3 = new House("Вулиця Індепенденс, 456");
 
-        house1.openLogFile();
+        System.out.print(House.param3 + "   " +House.param2);
+
+
+       /* house1.openLogFile();
         house2.openLogFile();
         house3.openLogFile();
 
@@ -34,6 +38,12 @@ public class HouseDrive {
 
         house1.closeLogFile();
         house2.closeLogFile();
-        house3.closeLogFile();
+        house3.closeLogFile();*/
+    }
+    public static void main1() {
+        House house1 = new House("Вулиця Лінкольна, 123", 3, true);
+        House house3 = new House("Вулиця Лінкольна, 123", 3, true);
+        House house2 = new House("Вулиця Індепенденс, 456");
+
     }
 }

@@ -1,10 +1,5 @@
-									q	
-								q	q	
-							q	q	q	
-						q	q	q	q	
-					q	q	q	q	q	
-				q	q	q	q	q	q	
-			q	q	q	q	q	q	q	
-		q	q	q	q	q	q	q	q	
-	+	+	+	+	+	+	+	+	+	
-+	+	+	+	+	+	+	+	+	+	
+				t	
+			t	t	
+		t	t	t	
+	+	+	+	+	
++	+	+	+	+	

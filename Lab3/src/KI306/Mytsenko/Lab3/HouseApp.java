@@ -9,7 +9,12 @@ package KI306.Mytsenko.Lab3;
 public class HouseApp {
     public static void main(String[] args) {
         // Create an office center
-        OfficeCenter officeCenter = new OfficeCenter("789 Oak St.", 5, 500, true, 50, true, true);
+        OfficeCenter officeCenter = new OfficeCenter("789 Oak St.", 5, 500, true, 50, true, true) {
+            @Override
+            public void addWhiteboard2(boolean hasWhiteboard) {
+
+            }
+        };
 
         // Display office center details
         officeCenter.displayDetails();
@@ -23,5 +28,8 @@ public class HouseApp {
 
         // Display updated office center details
         officeCenter.displayDetails();
+
+       officeCenter.toString();
+
     }
 }

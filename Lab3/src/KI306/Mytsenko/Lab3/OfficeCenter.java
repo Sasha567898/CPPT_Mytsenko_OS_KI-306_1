@@ -1,4 +1,6 @@
 package KI306.Mytsenko.Lab3;
+import java.io.*;
+import java.io.FileWriter;
 
 import KI306.Mytsenko.Lab3.*;
 import KI306.Mytsenko.Lab3.OfficeInterface.*;
@@ -12,7 +14,7 @@ import KI306.Mytsenko.Lab3.OfficeInterface.*;
  * @author Oleksandr Mytsenko
  * @version 1.0
  */
-public class OfficeCenter extends House implements OfficeInterface {
+public abstract class OfficeCenter extends House implements OfficeInterface, OfficeInterface2 {
     private int officeSpace;  // Represents the amount of office space in square meters
     private boolean hasMeetingRoom;
     private int numberOfDesks;
@@ -119,8 +121,28 @@ public class OfficeCenter extends House implements OfficeInterface {
      */
     public void addWhiteboard(boolean hasWhiteboard) {
         this.hasWhiteboard = hasWhiteboard;
-        // Additional logic related to adding a whiteboard
+
     }
 
+    public void addProjector2(boolean hasProjector){
+        System.out.println("Projector was added");
+        hasProjector = true;
+    }
+
+    public String writeAddressToFile() {
+        String address = getAddress();
+
+        try (FileWriter writer = new FileWriter("Address.txt")) {
+            writer.write(address);
+        } catch (IOException e) {
+            System.err.println("Помилка при записі у файл: " + e.getMessage());
+        }
+
+        return address;
+    }
+    @Override
+    public String toString() {
+        return writeAddressToFile();
+    }
 
 }
