@@ -1,13 +1,19 @@
 from house import House
-class OfficeCenter(House):
+from SomeClass import SomeClass
+class OfficeCenter(House, SomeClass):
     def __init__(self, address, number_of_floors, office_space,
                  has_meeting_room, number_of_desks, has_projector, has_whiteboard):
         super().__init__(address, number_of_floors)
+        # Ініціалізуємо конструктори від унаслідованих класів
+
         self.office_space = office_space
         self.has_meeting_room = has_meeting_room
         self.number_of_desks = number_of_desks
         self.has_projector = has_projector
         self.has_whiteboard = has_whiteboard
+
+    def display_class_name(self):
+        print(f"New class name: {self.__class__.__name__}")
 
     def get_office_space(self):
         return self.office_space
@@ -66,3 +72,5 @@ if __name__ == "__main__":
     office.add_whiteboard(False)
 
     office.display_details()
+
+    office.display_class_name()

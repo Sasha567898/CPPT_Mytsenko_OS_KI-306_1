@@ -19,14 +19,16 @@ public class Main {
         penal.putItem(new Rubber("Rubber2" , 15.25));
         penal.putItem(new Scissors("Scissors2" , 100));
 
-        Item item = penal.getItem(2);
-        item.print();
+        System.out.println(penal.getMax().getPrice());
 
-        item = penal.getItem(3);
-        item.use();
+       // Item item = penal.getItem(2);
+        //item.print();
 
-        Item max = penal.getMax();
-        System.out.println("\nThe the most expensive item in penal is: ");
-        max.print();
+       //item = penal.getItem(3);
+        //item.use();
+
+        //Item max = penal.getMax();
+      //  System.out.println("\nThe the most expensive item in penal is: ");
+        //max.print();
     }
 }
